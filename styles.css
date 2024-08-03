@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Metodo para darle formato al cuerpo de la calculadora */
+.calculator {
+    width: 320px;
+    height: 480px;
+    background-color: #25be60;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Acá para darle formato donde se ven al precionar los números*/
+.display {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/*Acá se le da el formato a los botones que contienen los números*/
+.button {
+    width: 100%;
+    height: 60px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/*Acá se le da el formato a los botones de las operaciones*/
+.button.operator {
+    background-color: #FF5722;
+}
